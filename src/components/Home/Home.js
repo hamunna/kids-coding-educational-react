@@ -33,7 +33,7 @@ const Home = () => {
 
 				<div className="row row-cols-1 row-cols-md-2 g-4">
 
-					{/* Service Section */}
+					{/* Service Section Cards */}
 					{
 						services.slice(0, 4).map(service => <ServiceCard
 							key={service.id}

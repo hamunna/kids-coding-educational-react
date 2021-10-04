@@ -13,6 +13,7 @@ const Review = () => {
 						<p className="text-secondary">Book a seat for your kid Now!</p>
 					</div>
 
+					{/* Form Start */}
 					<form className="row g-3">
 
 						<div className="col-md-6">
@@ -64,6 +65,8 @@ const Review = () => {
 							<button type="submit" className="btn btn-primary">Submit</button>
 						</div>
 					</form>
+					{/* Form EDN */}
+					
 				</div>
 			</div>
 		</div>
