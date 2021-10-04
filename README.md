@@ -1,6 +1,6 @@
 # Kid Programming & Educational Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+See this project live: [Kid Programming & Educational Website](https://jovial-bartik-cc22da.netlify.app/).
 
 ## Availability
 
