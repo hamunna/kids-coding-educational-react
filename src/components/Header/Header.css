@@ -1,0 +1,36 @@
+#brand-logo img {
+	height: 50px;
+}
+
+#top-bar {
+	height: 100px;
+	width: 100%;
+	border-bottom: 2px solid chocolate;
+}
+/* 
+#top-bar::after {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 100%;
+	background-color: chocolate;
+} */
+
+#header-address div{
+	margin-left: 30px;
+}
+
+#header-address div h5{
+	font-size: 16px;
+	font-weight: 800;
+}
+
+nav ul li:not(:first-child) {
+	margin: 0 40px;
+}
+
+.contact-icons {
+	font-size: 40px;
+	color: chocolate;
+	padding-right: 0;
+}

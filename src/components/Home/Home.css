@@ -1,0 +1,19 @@
+#home-section {
+	background-image: url('../../images/banner.jpg');
+	width: 100%;
+	height: 500px;
+}
+
+#home-overlay {
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+}
+
+#home-content {
+	color: #fff;
+}
+
+#home-content h1 {
+	font-size: 40px;
+	font-weight: 800;
+}
