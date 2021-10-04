@@ -34,3 +34,10 @@ nav ul li:not(:first-child) {
 	color: chocolate;
 	padding-right: 0;
 }
+
+/* Responsive Top-Bar */
+@media only screen and (max-width: 974px){
+	#header-address {
+		display: none;
+	}
+}

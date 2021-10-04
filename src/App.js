@@ -6,6 +6,7 @@ import ContactForm from './components/ContactForm/ContactForm';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Services from './components/Services/Services';
+import NotFound from './components/NotFound/NotFound';
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -13,48 +14,48 @@ import Services from './components/Services/Services';
 
 function App() {
   return (
-    <div>
+    <Router>
+
+      {/* Default Header Section */}
+      <Header></Header>
+      <Switch>
+
+        {/* Root Home Page */}
+        <Route exact path="/">
+          <Home></Home>
+        </Route>
+
+        {/* Exact Home Page */}
+        <Route exact path="/home">
+          <Home></Home>
+        </Route>
 
 
-      <Router>
-        <Switch>
+        {/* About Us Page */}
+        <Route exact path="/about">
+          <About></About>
+        </Route>
 
+        {/* Contact Us Page */}
+        <Route exact path="/contact">
+          <ContactForm></ContactForm>
+        </Route>
 
+        {/* Services Page */}
+        <Route cxact path="/services">
+          <Services></Services>
+        </Route>
 
-          <Route exact path="/home">
-            <Header></Header>
-            <Home></Home>
-            <Footer></Footer>
-          </Route>
+        {/* 404 Not Found Page */}
+        <Route path="*">
+          <NotFound></NotFound>
+        </Route>
 
-          <Route exact path="/about">
-            <Header></Header>
-            <About></About>
-            <Footer></Footer>
-          </Route>
+      </Switch>
 
-          <Route exact path="/contact">
-            <Header></Header>
-            <ContactForm></ContactForm>
-            <Footer></Footer>
-          </Route>
-
-          <Route cxact path="/services">
-            <Header></Header>
-            <Services></Services>
-            <Footer></Footer>
-          </Route>
-
-          <Route exact path="">
-            <Header></Header>
-            <Home></Home>
-            <Footer></Footer>
-          </Route>
-
-        </Switch>
-      </Router>
-
-    </div>
+      {/* Default Footer Section */}
+      <Footer></Footer>
+    </Router>
   );
 }
 
